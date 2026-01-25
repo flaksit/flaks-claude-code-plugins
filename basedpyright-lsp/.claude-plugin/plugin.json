@@ -1,0 +1,11 @@
+{
+  "name": "basedpyright-lsp",
+  "description": "Python language server based on basedpyright",
+  "version": "1.0.0",
+  "author": {
+    "name": "flaksit"
+  },
+  "license": "MIT",
+  "repository": "https://github.com/flaksit/claude-code-plugins",
+  "homepage": "https://github.com/flaksit/claude-code-plugins"
+}

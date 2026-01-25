@@ -1,0 +1,16 @@
+{
+  "description": "Check for basedpyright installation on session start",
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash ${CLAUDE_PLUGIN_ROOT}/hooks/check-basedpyright.sh",
+            "timeout": 30
+          }
+        ]
+      }
+    ]
+  }
+}
