@@ -16,10 +16,14 @@ if command -v uv &> /dev/null; then
     if command -v basedpyright-langserver &> /dev/null; then
         echo "[basedpyright-lsp] Installed successfully via uv"
         exit 0
+    else
+        echo "[basedpyright-lsp] Failed to install via uv. Please run manually:"
+        echo "                   uv tool install basedpyright"
+        exit 0
     fi
 fi
 
-# Fallback to pip if uv is not available or failed
+# Fallback to pip if uv is not available
 if ! command -v pip &> /dev/null; then
     echo "[basedpyright-lsp] Neither uv nor pip is installed. Please install Python first."
     echo "                   Then run: pip install basedpyright"
