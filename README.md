@@ -24,7 +24,7 @@ Python language server based on [basedpyright](https://github.com/DetachHead/bas
 
 To add this plugin marketplace to Claude Code, run:
 
-```
+```text
 /plugin marketplace add flaksit/claude-plugins
 ```
 
@@ -32,28 +32,26 @@ To add this plugin marketplace to Claude Code, run:
 
 Install the basedpyright-lsp plugin:
 
-```
+```text
 /plugin install basedpyright-lsp@flaksit-claude-plugins
 ```
 
 Or browse and install interactively:
 
-```
+```text
 /plugin
 ```
 
-## Manual Installation
-
-### basedpyright-lsp
+#### Manual Installation of basedpyright
 
 The plugin will automatically install basedpyright on first use. If auto-install fails, you can install manually:
 
-**Via uv (recommended):**
+Via uv (recommended):
 ```bash
 uv tool install basedpyright
 ```
 
-**Via pip:**
+Via pip:
 ```bash
 pip install basedpyright
 ```
