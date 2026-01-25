@@ -1,0 +1,27 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "claude-code-plugins",
+  "metadata": {
+    "description": "Claude Code plugin marketplace",
+    "version": "1.0.0",
+    "license": "MIT",
+    "repository": "https://github.com/flaksit/claude-code-plugins",
+    "homepage": "https://github.com/flaksit/claude-code-plugins"
+  },
+  "owner": {
+    "name": "flaksit"
+  },
+  "plugins": [
+    {
+      "name": "basedpyright-lsp",
+      "version": "1.0.0",
+      "source": "./basedpyright-lsp",
+      "description": "Python language server based on basedpyright",
+      "category": "development",
+      "tags": ["python", "lsp", "basedpyright"],
+      "author": {
+        "name": "flaksit"
+      }
+    }
+  ]
+}
