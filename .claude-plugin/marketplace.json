@@ -1,11 +1,11 @@
 {
-  "name": "flaksit-claude-plugins",
+  "name": "flaks-claude-code-plugins",
   "metadata": {
     "description": "Claude Code plugin marketplace",
     "version": "1.0.0",
     "license": "MIT",
-    "repository": "https://github.com/flaksit/claude-plugins",
-    "homepage": "https://github.com/flaksit/claude-plugins"
+    "repository": "https://github.com/flaksit/flaks-claude-code-plugins",
+    "homepage": "https://github.com/flaksit/flaks-claude-code-plugins"
   },
   "owner": {
     "name": "Flaks, Jan Frederik Léger"
