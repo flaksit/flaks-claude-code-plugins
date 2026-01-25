@@ -20,7 +20,7 @@
       "category": "development",
       "tags": ["python", "lsp", "basedpyright"],
       "author": {
-        "name": "flaksit"
+        "name": "Jan Frederik Léger"
       }
     }
   ]
