@@ -23,7 +23,7 @@ if command -v uv &> /dev/null; then
     fi
 fi
 
-# Fallback to pip if uv is not available
+# Use pip only if uv is not available
 if ! command -v pip &> /dev/null; then
     echo "[basedpyright-lsp] Neither uv nor pip is installed. Please install Python first."
     echo "                   Then run: pip install basedpyright"
