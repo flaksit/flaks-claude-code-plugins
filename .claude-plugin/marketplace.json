@@ -1,5 +1,4 @@
 {
-  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
   "name": "flaksit-claude-plugins",
   "metadata": {
     "description": "Claude Code plugin marketplace",
