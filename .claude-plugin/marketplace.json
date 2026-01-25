@@ -1,12 +1,12 @@
 {
   "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
-  "name": "claude-code-plugins",
+  "name": "flaksit-claude-plugins",
   "metadata": {
     "description": "Claude Code plugin marketplace",
     "version": "1.0.0",
     "license": "MIT",
-    "repository": "https://github.com/flaksit/claude-code-plugins",
-    "homepage": "https://github.com/flaksit/claude-code-plugins"
+    "repository": "https://github.com/flaksit/claude-plugins",
+    "homepage": "https://github.com/flaksit/claude-plugins"
   },
   "owner": {
     "name": "Flaks, Jan Frederik Léger"
