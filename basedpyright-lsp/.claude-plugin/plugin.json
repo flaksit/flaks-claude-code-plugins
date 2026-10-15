@@ -1,7 +1,8 @@
 {
+  "$schema": "https://www.schemastore.org/claude-code-plugin-manifest.json",
   "name": "basedpyright-lsp",
   "description": "Python language server based on basedpyright",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": {
     "name": "Jan Frederik Léger"
   },
