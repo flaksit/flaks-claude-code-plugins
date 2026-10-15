@@ -15,7 +15,7 @@ Python language server based on [basedpyright](https://github.com/DetachHead/bas
 **Features:**
 - LSP operations: goToDefinition, findReferences, hover, documentSymbol, workspaceSymbol, goToImplementation, and call hierarchy
 - Real-time error and warning detection
-- Automatic installation via uv (preferred) or pip
+- Automatic installation via uv
 - Support for `.py` and `.pyi` files
 
 ## Getting Started
@@ -44,16 +44,16 @@ Or browse and install interactively:
 
 #### Manual Installation of basedpyright
 
-The plugin will automatically install basedpyright on first use. If auto-install fails, you can install manually:
+If uv is available, the plugin installs basedpyright on session start. Otherwise, install it manually:
 
 Via uv (recommended):
 ```bash
 uv tool install basedpyright
 ```
 
-Via pip:
+Via pipx:
 ```bash
-pip install basedpyright
+pipx install basedpyright
 ```
 
 ## Acknowledgments

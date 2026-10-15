@@ -8,39 +8,21 @@ if command -v basedpyright-langserver &> /dev/null; then
     exit 0
 fi
 
-# Check if uv is available (preferred installation method)
+# Auto-install only via uv (isolated tool env on PATH). No pip fallback: bare
+# `pip install` fails on PEP 668 externally-managed Pythons (Debian/Ubuntu,
+# Homebrew) or pollutes whichever Python is active.
 if command -v uv &> /dev/null; then
     echo "[basedpyright-lsp] Installing basedpyright via uv..."
     uv tool install basedpyright
-    
+
     if command -v basedpyright-langserver &> /dev/null; then
         echo "[basedpyright-lsp] Installed successfully via uv"
         exit 0
-    else
-        echo "[basedpyright-lsp] Failed to install via uv. Please run manually:"
-        echo "                   uv tool install basedpyright"
-        exit 0
     fi
+    echo "[basedpyright-lsp] Failed to install via uv."
 fi
 
-# Use pip only if uv is not available
-if ! command -v pip &> /dev/null; then
-    echo "[basedpyright-lsp] Neither uv nor pip is installed. Please install Python first."
-    echo "                   Then run: pip install basedpyright"
-    echo "                   Or with uv: uv tool install basedpyright"
-    exit 0
-fi
-
-# Install via pip
-echo "[basedpyright-lsp] Installing basedpyright via pip..."
-pip install basedpyright
-
-if command -v basedpyright-langserver &> /dev/null; then
-    echo "[basedpyright-lsp] Installed successfully via pip"
-else
-    echo "[basedpyright-lsp] Failed to install. Please run manually:"
-    echo "                   pip install basedpyright"
-    echo "                   Or with uv: uv tool install basedpyright"
-fi
-
+echo "[basedpyright-lsp] basedpyright-langserver not found. Install it with one of:"
+echo "                   uv tool install basedpyright"
+echo "                   pipx install basedpyright"
 exit 0
